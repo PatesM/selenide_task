@@ -15,7 +15,7 @@ import com.codeborne.selenide.Selenide;
 import com.codeborne.selenide.SelenideElement;
 import io.qameta.allure.Description;
 import org.example.steps.asserts.AssertAddFirstProductIntoBag;
-import org.example.steps.selenium_steps.SeleniumMethods;
+import org.example.steps.selenide_steps.SelenideMethods;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
@@ -24,7 +24,7 @@ import org.junit.jupiter.api.Test;
 public class AddFirstProductIntoBag {
 
     private final AssertAddFirstProductIntoBag assertAddFirstProductIntoBag = new AssertAddFirstProductIntoBag();
-    private final SeleniumMethods seleniumMethods = new SeleniumMethods();
+    private final SelenideMethods seleniumMethods = new SelenideMethods();
 
     @BeforeEach
     void setUp() {

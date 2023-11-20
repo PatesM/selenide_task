@@ -10,6 +10,6 @@ public class Driver {
         Configuration.browser = "chrome";
         Configuration.browserSize = "1920x1080";
         Configuration.headless = false;
-        Configuration.timeout = 5000;
+        Configuration.timeout = 8000;
     }
 }

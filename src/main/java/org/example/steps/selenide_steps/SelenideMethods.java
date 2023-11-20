@@ -1,27 +1,25 @@
-package org.example.steps.selenium_steps;
+package org.example.steps.selenide_steps;
 
 import static com.codeborne.selenide.Condition.interactable;
 import static com.codeborne.selenide.Condition.visible;
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.open;
-import static org.example.flows.AddFirstProductIntoBagFlow.firstProductXpath;
 
 import com.codeborne.selenide.SelenideElement;
 import org.openqa.selenium.By;
 
-public class SeleniumMethods {
+public class SelenideMethods {
 
     public void openPage(String URL) {
         open(URL);
-        findElementByXpath(firstProductXpath).shouldBe(visible);
     }
 
     public SelenideElement findElement(String element) {
-        return $(element).shouldBe(visible, interactable);
+        return $(element).shouldBe(visible);
     }
 
     public SelenideElement findElementByXpath(String elementXpath) {
-        return $(By.xpath(elementXpath)).shouldBe(visible, interactable);
+        return $(By.xpath(elementXpath)).shouldBe(visible);
     }
 
     public void searchItem(SelenideElement selenideElement, String searchValue) {
